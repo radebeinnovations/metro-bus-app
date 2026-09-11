@@ -14,7 +14,7 @@ const uiIcon = (name) => ({
   tag:'<svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M9 7V4a3 3 0 0 1 6 0v3M7 16h4M7 19h7"/><circle cx="15.5" cy="14" r="2"/></svg>',
   wallet:'<svg viewBox="0 0 24 24"><path d="M4 7a3 3 0 0 1 3-3h11a2 2 0 0 1 2 2v13a1 1 0 0 1-1 1H6a3 3 0 0 1-3-3V7z"/><path d="M17 12h4v5h-4a2.5 2.5 0 0 1 0-5zM17 14.5h.01"/></svg>'
 }[name]);
-const tapIcon = '<svg viewBox="0 0 48 48" aria-label="Tap to pay"><circle cx="24" cy="24" r="21"/><path d="M17 15v18a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V15a4 4 0 0 0-4-4h-6a4 4 0 0 0-4 4Z"/><path d="M22 31h4M34 17c5 4 5 10 0 14M39 12c9 7 9 17 0 24"/></svg>';
+const tapIcon = '<svg viewBox="0 0 64 64" aria-label="Tap to pay"><circle cx="32" cy="32" r="27"/><path d="M22 24c4 5 4 11 0 16M32 18c7 8 7 20 0 28M42 13c10 11 10 27 0 38"/></svg>';
 const paymentIcon = (type) => type==='card' ? '<svg viewBox="0 0 54 40" aria-label="Debit card"><rect x="1" y="1" width="52" height="38" rx="8" fill="#102970"/><path d="M7 12h40" stroke="#d5ff00" stroke-width="3"/><circle cx="34" cy="28" r="7" fill="#eb001b"/><circle cx="42" cy="28" r="7" fill="#ff9900" fill-opacity=".9"/></svg>' : '<svg viewBox="0 0 54 40" aria-label="Instant EFT"><rect x="1" y="1" width="52" height="38" rx="8" fill="#f0f2f5"/><path d="M9 17h36M12 14l15-7 15 7M14 19v10M22 19v10M30 19v10M38 19v10M9 31h36" stroke="#07174b" stroke-width="2.5" stroke-linejoin="round"/></svg>';
 let state = { screen: 'login', tab: 'home', modal: null, balance: 245.50, topUpAmount: 100 };
 let serviceMode = 'airtime';
